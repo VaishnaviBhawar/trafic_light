@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #div1{
+            height:500px;
+            width:250px;border: 20px solid rgb(76, 74, 74);border-radius: 50px;
+            background-color: rgb(155, 153, 153);
+            display: flex;
+            margin-left: 40%;
+            display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+       }
+       #div2{
+       
+        height: 200px;
+        width: 50px;
+       background-color: rgb(76, 74, 74);
+       margin-left: 48%;
+       }
+       #a1{
+        height:90px;
+            width: 90px;
+
+            background-color: white;
+            display: flex;
+            margin-left: 33%;
+            margin-top: 20px;
+            border-radius: 50%;
+       }
+       #a2{
+        height:90px;
+            width: 90px;
+
+            background-color: white;
+            display: flex;
+            margin-left: 33%;
+            margin-top: 20px;
+            border-radius: 50%;
+       }
+       #a3{
+        height:90px;
+            width: 90px;
+
+            background-color: white;
+            display: flex;
+            margin-left: 33%;
+            margin-top: 20px;
+            border-radius: 50%;
+       }
+       #button{
+        position: fixed;
+        top: 20%;
+        right: 20%;
+       }
+
+       #btn1{
+        background-color: red;
+        padding: 10px 30px;
+        border-radius: 10px;
+       }
+       #btn2{
+        background-color: green;
+        padding: 10px 30px;
+        border-radius: 10px;
+       }
+       #btn3{
+        background-color: yellow;
+        padding: 10px 30px;
+        border-radius: 10px;
+       }
+       #box{
+        height:300px;
+        width:250px;
+        border: 3px solid black;
+        position: fixed;
+        top: 10%;
+        left: 20%;
+       }
+
+    </style>
+<body>
+    <div id="div1">
+        <div id="a1"></div>
+        <div id="a2"></div>
+        <div id="a3"></div>
+    </div>
+    <div id="div2">
+    </div>
+    <div id="button">
+    <button id="btn1" onclick="red()">red</button>
+    <button id="btn2"onclick="green()">green</button>
+    <button id="btn3" onclick="yellow()">yellow</button>
+   </div>
+   <img src="images.png"  id="box">
+   </div>
+   <script>
+    function red(){
+        const red1= document.getElementById('a1').style.backgroundColor='red';
+        const  red2= document.getElementById('a2').style.backgroundColor='red';
+        const  red3= document.getElementById('a3').style.backgroundColor='red';
+        const  red4= document.getElementById('box').src="download.png";
+    }
+    function green(){
+        const red1= document.getElementById('a1').style.backgroundColor='green';
+        const  red2= document.getElementById('a2').style.backgroundColor='green';
+        const  red3= document.getElementById('a3').style.backgroundColor='green';
+        const  red4= document.getElementById('box').src="images.jpg";
+    }
+    function yellow()
+    {
+        const red1= document.getElementById('a1').style.backgroundColor='yellow';
+        const  red2= document.getElementById('a2').style.backgroundColor='yellow';
+        const  red3= document.getElementById('a3').style.backgroundColor='yellow';
+        const  red4= document.getElementById('box').src="download (1).png"; 
+    }
+   </script>
+</body>
+</html>
